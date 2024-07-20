@@ -19,7 +19,7 @@ server.use((req, res, next) => {
     } else {
       res.sendStatus(401)
     }
-})  
+})
 
 server.use((req, res, next) => {
     const json = res.json.bind(res)

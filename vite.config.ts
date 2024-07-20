@@ -12,6 +12,14 @@ export default defineConfig({
     }),
     Components({
       resolvers: [VantResolver()],
-    }),
-  ]
+    })
+  ],
+  //  vite 配置反向代理
+  server: {
+    port: 3000,
+    proxy: {
+      '/api': 'http://localhost:8000',
+      '/imgs': 'http://localhost:8000/'
+    }
+  }
 })
