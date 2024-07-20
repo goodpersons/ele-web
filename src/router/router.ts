@@ -3,11 +3,12 @@ import IndexView from '../views/Index.vue'
 const routes = [
   {
     path: '/',
-    redirect: '/tab/home',
+    redirect: '/tab',
   },
   {
     path: '/tab',
     name: 'tab',
+    redirect: '/tab/home',
     component: IndexView,
     children: [
       { path: 'home',
