@@ -1,6 +1,8 @@
 <template>
-  <router-view></router-view>
-  <TabView></TabView>
+  <div class="indexwrapper">
+    <router-view></router-view>
+    <TabView></TabView>
+  </div>
 </template>
 
 <script setup lang='ts'>
